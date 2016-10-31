@@ -1,17 +1,17 @@
 //
-//  TTAlertView.m
-//  TTAlertView
+//  TTAlert.m
+//  TTAlert
 //
 //  Created by user on 16/9/27.
 //  Copyright © 2016年 Zhentao Zhang. All rights reserved.
 //
 
-#import "TTAlertView.h"
+#import "TTAlert.h"
 
 #define kWidth  255
 #define kHeight 180
 
-@interface TTAlertView()
+@interface TTAlert()
 
 @property (nonatomic, strong) UIImageView * iconView;
 
@@ -21,7 +21,7 @@
 
 @end
 
-@implementation TTAlertView
+@implementation TTAlert
 
 - (instancetype)init{
     self=[super init];

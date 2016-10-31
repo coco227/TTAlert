@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE01A65A1DC721DA00D7696D /* alert_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CE01A6551DC721DA00D7696D /* alert_bg.png */; };
-		CE01A65B1DC721DA00D7696D /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE01A6561DC721DA00D7696D /* close@2x.png */; };
-		CE01A65C1DC721DA00D7696D /* success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE01A6571DC721DA00D7696D /* success@2x.png */; };
-		CE01A65D1DC721DA00D7696D /* TTAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01A6591DC721DA00D7696D /* TTAlertView.m */; };
+		CE537E3A1DC7460700DB39E4 /* alert_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = CE537E351DC7460700DB39E4 /* alert_bg.png */; };
+		CE537E3B1DC7460700DB39E4 /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE537E361DC7460700DB39E4 /* close@2x.png */; };
+		CE537E3C1DC7460700DB39E4 /* success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE537E371DC7460700DB39E4 /* success@2x.png */; };
+		CE537E3D1DC7460700DB39E4 /* TTAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = CE537E391DC7460700DB39E4 /* TTAlert.m */; };
 		CE614AF91DC71A0A0063A4E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE614AF81DC71A0A0063A4E0 /* main.m */; };
 		CE614AFC1DC71A0A0063A4E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE614AFB1DC71A0A0063A4E0 /* AppDelegate.m */; };
 		CE614AFF1DC71A0A0063A4E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE614AFE1DC71A0A0063A4E0 /* ViewController.m */; };
@@ -20,11 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE01A6551DC721DA00D7696D /* alert_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alert_bg.png; sourceTree = "<group>"; };
-		CE01A6561DC721DA00D7696D /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
-		CE01A6571DC721DA00D7696D /* success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success@2x.png"; sourceTree = "<group>"; };
-		CE01A6581DC721DA00D7696D /* TTAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAlertView.h; sourceTree = "<group>"; };
-		CE01A6591DC721DA00D7696D /* TTAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAlertView.m; sourceTree = "<group>"; };
+		CE537E351DC7460700DB39E4 /* alert_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alert_bg.png; sourceTree = "<group>"; };
+		CE537E361DC7460700DB39E4 /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
+		CE537E371DC7460700DB39E4 /* success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success@2x.png"; sourceTree = "<group>"; };
+		CE537E381DC7460700DB39E4 /* TTAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAlert.h; sourceTree = "<group>"; };
+		CE537E391DC7460700DB39E4 /* TTAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAlert.m; sourceTree = "<group>"; };
 		CE614AF41DC71A0A0063A4E0 /* TTAlertViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTAlertViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE614AF81DC71A0A0063A4E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE614AFA1DC71A0A0063A4E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -48,22 +48,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE01A6531DC721DA00D7696D /* TTAlertView */ = {
+		CE537E331DC7460700DB39E4 /* TTAlert */ = {
 			isa = PBXGroup;
 			children = (
-				CE01A6541DC721DA00D7696D /* images */,
-				CE01A6581DC721DA00D7696D /* TTAlertView.h */,
-				CE01A6591DC721DA00D7696D /* TTAlertView.m */,
+				CE537E381DC7460700DB39E4 /* TTAlert.h */,
+				CE537E391DC7460700DB39E4 /* TTAlert.m */,
+				CE537E341DC7460700DB39E4 /* images */,
 			);
-			path = TTAlertView;
+			path = TTAlert;
 			sourceTree = SOURCE_ROOT;
 		};
-		CE01A6541DC721DA00D7696D /* images */ = {
+		CE537E341DC7460700DB39E4 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				CE01A6551DC721DA00D7696D /* alert_bg.png */,
-				CE01A6561DC721DA00D7696D /* close@2x.png */,
-				CE01A6571DC721DA00D7696D /* success@2x.png */,
+				CE537E351DC7460700DB39E4 /* alert_bg.png */,
+				CE537E361DC7460700DB39E4 /* close@2x.png */,
+				CE537E371DC7460700DB39E4 /* success@2x.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -87,7 +87,7 @@
 		CE614AF61DC71A0A0063A4E0 /* TTAlertViewExample */ = {
 			isa = PBXGroup;
 			children = (
-				CE01A6531DC721DA00D7696D /* TTAlertView */,
+				CE537E331DC7460700DB39E4 /* TTAlert */,
 				CE614AFA1DC71A0A0063A4E0 /* AppDelegate.h */,
 				CE614AFB1DC71A0A0063A4E0 /* AppDelegate.m */,
 				CE614AFD1DC71A0A0063A4E0 /* ViewController.h */,
@@ -167,12 +167,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE01A65B1DC721DA00D7696D /* close@2x.png in Resources */,
+				CE537E3B1DC7460700DB39E4 /* close@2x.png in Resources */,
 				CE614B071DC71A0A0063A4E0 /* LaunchScreen.storyboard in Resources */,
-				CE01A65C1DC721DA00D7696D /* success@2x.png in Resources */,
+				CE537E3C1DC7460700DB39E4 /* success@2x.png in Resources */,
 				CE614B041DC71A0A0063A4E0 /* Assets.xcassets in Resources */,
 				CE614B021DC71A0A0063A4E0 /* Main.storyboard in Resources */,
-				CE01A65A1DC721DA00D7696D /* alert_bg.png in Resources */,
+				CE537E3A1DC7460700DB39E4 /* alert_bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,10 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE537E3D1DC7460700DB39E4 /* TTAlert.m in Sources */,
 				CE614AFF1DC71A0A0063A4E0 /* ViewController.m in Sources */,
 				CE614AFC1DC71A0A0063A4E0 /* AppDelegate.m in Sources */,
 				CE614AF91DC71A0A0063A4E0 /* main.m in Sources */,
-				CE01A65D1DC721DA00D7696D /* TTAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

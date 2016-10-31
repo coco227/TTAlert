@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "TTAlertView.h"
+#import "TTAlert.h"
 
 @interface ViewController ()
 
@@ -17,7 +17,7 @@
 
 - (IBAction)showDoubtView:(id)sender;
 
-@property (nonatomic, strong) TTAlertView * alert;
+@property (nonatomic, strong) TTAlert * alert;
 
 @end
 
@@ -92,9 +92,9 @@
 }
 
 #pragma mark - TTAlertView getter & setter
-- (TTAlertView *)alert{
+- (TTAlert *)alert{
     if (!_alert) {
-        _alert = [[TTAlertView alloc] init];
+        _alert = [[TTAlert alloc] init];
     }
     return _alert;
 }

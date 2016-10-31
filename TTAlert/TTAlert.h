@@ -1,6 +1,6 @@
 //
-//  TTAlertView.h
-//  TTAlertView
+//  TTAlert.h
+//  TTAlert
 //
 //  Created by user on 16/9/27.
 //  Copyright © 2016年 Zhentao Zhang. All rights reserved.
@@ -21,7 +21,7 @@ typedef void (^didCancel)(UIButton * button);
 
 typedef void (^didDisappear)(UIButton * button);
 
-@interface TTAlertView : UIWindow
+@interface TTAlert : UIWindow
 {
     didConfirm _confirm;
     didCancel  _cancel;
