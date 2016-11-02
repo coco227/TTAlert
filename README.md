@@ -1,4 +1,4 @@
-# TTAlert
+# TTAlert/TTAlertView
 
 这是一个自定义AlertView遮罩层，返回用block.
 
