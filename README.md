@@ -1,3 +1,5 @@
+###此控件的具体实现说明请访问：https://my.oschina.net/227/blog/779723
+
 # TTAlert/TTAlertView
 
 这是一个自定义AlertView遮罩层，返回用block.  
@@ -64,3 +66,7 @@ typedef NS_ENUM(int, TTAlertType) {
 -(void)didCancel:(void (^)(UIButton * button))didCancel;    //点击取消时（如果有取消按钮）返回的block   
 -(void)didDisappear:(void (^)(UIButton * button))didDisappear; //alert消失时返回的block   
 ```
+-----  
+
+###作者：coco227   
+###blog：https://my.oschina.net/227/home  
