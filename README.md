@@ -1,9 +1,13 @@
 # TTAlert/TTAlertView
 
 这是一个自定义AlertView遮罩层，返回用block.  
-
-<img src="http://static.oschina.net/uploads/space/2016/1102/122235_zMdI_927576.png" width = "240" alt="1" align=left /><img src="http://static.oschina.net/uploads/space/2016/1102/122400_kce2_927576.png" width = "240" alt="2" align=left /><img src="http://static.oschina.net/uploads/space/2016/1102/122430_wb81_927576.png" width = "240" alt="3" align=left />   
-
+<div  align="center">
+<img src="http://static.oschina.net/uploads/space/2016/1102/122235_zMdI_927576.png" width = "240" alt="1"  />
+<img src="http://static.oschina.net/uploads/space/2016/1102/122400_kce2_927576.png" width = "240" alt="2"  />
+<img src="http://static.oschina.net/uploads/space/2016/1102/122430_wb81_927576.png" width = "240" alt="3"  />   
+</div>
+-----  
+   
 ## 使用方法
 ```objc
 #import "TTAlert.h"   
