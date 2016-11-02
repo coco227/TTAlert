@@ -1,6 +1,9 @@
 # TTAlert/TTAlertView
 
-这是一个自定义AlertView遮罩层，返回用block.
+这是一个自定义AlertView遮罩层，返回用block.  
+![pic1](http://static.oschina.net/uploads/space/2016/1102/122235_zMdI_927576.png)
+![pic2](http://static.oschina.net/uploads/space/2016/1102/122400_kce2_927576.png)
+![pic3](http://static.oschina.net/uploads/space/2016/1102/122430_wb81_927576.png)
 
 ## 使用方法
 ```objc
