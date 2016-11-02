@@ -105,7 +105,8 @@
     CGRect keyboardRect = [[notiInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
     self.keyboardHeight = keyboardRect.size.height;
     
-    if (iPhone4 || iPhone5) {
+    if ((iPhone4 || iPhone5) && (self.hidden == NO) &&
+        ([UIApplication sharedApplication].keyWindow == self)) {
         [UIView animateWithDuration:0.2 animations:^{
             self.center = CGPointMake(self.center.x,
                                       self.center.y - 50);
@@ -115,7 +116,8 @@
 
 //当键退出时调用
 - (void)keyboardWillHide:(NSNotification *)notification{
-    if (iPhone4 || iPhone5) {
+    if ((iPhone4 || iPhone5) && (self.hidden == NO) &&
+        ([UIApplication sharedApplication].keyWindow == self)) {
         [UIView animateWithDuration:0.2 animations:^{
             self.center = CGPointMake(self.center.x,
                                       self.center.y + 50);
