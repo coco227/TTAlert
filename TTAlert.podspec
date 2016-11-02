@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
   s.author             = { "tao" => "tchkzzt@live.com" }
   s.social_media_url   = "http://my.oschina.net/227/blog"
   s.source       = { :git => "https://github.com/coco227/TTAlert.git", :tag => s.version }
-  s.source_files  = "TTAlert"
+  s.source_files  = "TTAlert/**/*"
   s.requires_arc = true
 end

@@ -10,6 +10,8 @@
 
 #define kWidth  255
 #define kHeight 180
+#define iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
 
 @interface TTAlert()
 
@@ -18,6 +20,8 @@
 @property (nonatomic, strong) UIView * bgView;
 
 @property (nonatomic, strong) UIButton * dismissBtn;
+
+@property (nonatomic) float keyboardHeight;
 
 @end
 
@@ -48,6 +52,7 @@
 - (void)dealloc{
     [self resignKeyWindow];
     [self removeFromSuperview];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma mark - UI
@@ -64,16 +69,24 @@
     [self.bgView addSubview:self.confirmBtn];
     
     [self addSubview:self.dismissBtn];
+    
+    //增加监听，当键盘出现或改变时收出消息
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillShow:)
+                                                 name:UIKeyboardWillShowNotification
+                                               object:nil];
+    
+    //增加监听，当键退出时收出消息
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillHide:)
+                                                 name:UIKeyboardWillHideNotification
+                                               object:nil];
 }
 
 #pragma mark - 公共方法
 - (void)show {
-//    [self.superview addSubview:self];
-//    [[UIApplication sharedApplication].windows[2] addSubview:self];
-//    NSLog(@"%@",[UIApplication sharedApplication].windows);
     self.hidden = NO;
     [self makeKeyAndVisible];
-    
 }
 
 - (void)dismiss {
@@ -82,6 +95,31 @@
     [[UIApplication sharedApplication].windows.lastObject removeFromSuperview];
     if (_disappear) {
         _disappear(nil);
+    }
+}
+
+//当键盘出现或改变时调用
+- (void)keyboardWillShow:(NSNotification *)notification{
+    //获取键盘的高度
+    NSDictionary *notiInfo = [notification userInfo];
+    CGRect keyboardRect = [[notiInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    self.keyboardHeight = keyboardRect.size.height;
+    
+    if (iPhone4 || iPhone5) {
+        [UIView animateWithDuration:0.2 animations:^{
+            self.center = CGPointMake(self.center.x,
+                                      self.center.y - 50);
+        }];
+    }
+}
+
+//当键退出时调用
+- (void)keyboardWillHide:(NSNotification *)notification{
+    if (iPhone4 || iPhone5) {
+        [UIView animateWithDuration:0.2 animations:^{
+            self.center = CGPointMake(self.center.x,
+                                      self.center.y + 50);
+        }];
     }
 }
 
